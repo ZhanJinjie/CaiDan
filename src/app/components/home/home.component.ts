@@ -12,15 +12,16 @@ export class HomeComponent implements OnInit {
 
   public cateList: any[] = []; // 菜品列表
   public domain: string = ''; // 服务器的域名
+  public titleColor: string = 'cyan';
 
   constructor(public common: CommonService) {
     this.domain = common.domain;
   }
 
-  async ngOnInit(): Promise<any> {
+  ngOnInit(): void {
 
     const api = 'api/productlist';
-    await this.common.get(api).then(data => {
+    this.common.get(api).then(data => {
       this.cateList = data.result;
       console.log(this.cateList);
     });

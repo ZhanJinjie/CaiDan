@@ -26,11 +26,11 @@ export class PcontentComponent implements OnInit {
 
   requestContent(id: any): void {
     /* 根据home页传递过来的id值，查找相应的页面信息 */
-    const api: string = 'api/productcontent?id=' + id;
-    this.common.get(api).then((response) => {
-      this.cateInfo = response.result[0];
-      console.log(this.cateInfo);
-    });
+      const api: string = 'api/productcontent?id=' + id;
+      this.common.get(api).then((response) => {
+        this.cateInfo = response.result[0];
+        console.log(this.cateInfo);
+      });
   }
 
 
