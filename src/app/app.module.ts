@@ -8,7 +8,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { PcontentComponent } from './components/pcontent/pcontent.component';
 
-/* 服务 */ 
+/* 服务 */
 import { CommonService } from './services/common.service'; // 接口服务
 import { HightlightDirective } from './directives/hightlight.directive';
 
